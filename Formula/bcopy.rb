@@ -5,21 +5,21 @@
 class Bcopy < Formula
   desc "Bulk copy codebase files to clipboard with smart filtering in markdown format for feeding it to LLMs"
   homepage "https://github.com/nodelike/bcopy"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nodelike/bcopy/releases/download/v1.0.1/bcopy_Darwin_x86_64.tar.gz"
-      sha256 "5b1d67edc5f37fda2b3816ed47c7eb24892a12b21cdd551d6c1a73ab5890915c"
+      url "https://github.com/nodelike/bcopy/releases/download/v1.0.2/bcopy_Darwin_x86_64.tar.gz"
+      sha256 "8a8606f9746865fcf64b7334eee37d9737591bb9e63616b0829a80f6800821ea"
 
       def install
         bin.install "bcopy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nodelike/bcopy/releases/download/v1.0.1/bcopy_Darwin_arm64.tar.gz"
-      sha256 "cdfcc5fc3978d8f5b9d7ee07786a9030c2f23354bd8993ed3e6ff5e6b3be6ad6"
+      url "https://github.com/nodelike/bcopy/releases/download/v1.0.2/bcopy_Darwin_arm64.tar.gz"
+      sha256 "234f34e10bdfd2837e0ca0b453ed3e76fd59133558a48a0d790d00f63a53e5c7"
 
       def install
         bin.install "bcopy"
@@ -29,15 +29,15 @@ class Bcopy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nodelike/bcopy/releases/download/v1.0.1/bcopy_Linux_x86_64.tar.gz"
-      sha256 "0d3002c3f9fe11134254b6f879b3358c47daf2b86ee0e68f8cd479acfba63b88"
+      url "https://github.com/nodelike/bcopy/releases/download/v1.0.2/bcopy_Linux_x86_64.tar.gz"
+      sha256 "371afddb876e000792062d7ed089adf41151d656589928a25caf2672aa7536d9"
       def install
         bin.install "bcopy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nodelike/bcopy/releases/download/v1.0.1/bcopy_Linux_arm64.tar.gz"
-      sha256 "ad682a613ddfa9aa6ef3f13f9f44151b3f1215da4472050890c12cbaeab34ce0"
+      url "https://github.com/nodelike/bcopy/releases/download/v1.0.2/bcopy_Linux_arm64.tar.gz"
+      sha256 "4a7c6fe05cb3ce37e1093a3b9ccdf01e81cad880f4e6948127017864a12b61d6"
       def install
         bin.install "bcopy"
       end
