@@ -5,21 +5,21 @@
 class Diffloc < Formula
   desc "Beautiful TUI for git diff line statistics"
   homepage "https://github.com/nodelike/diffloc"
-  version "1.0.6"
+  version "1.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.6/diffloc_Darwin_x86_64.tar.gz"
-      sha256 "28d1054b03284fcdccaf8bb3c32df643851780e2ea79caa2eef9179c5b562005"
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Darwin_x86_64.tar.gz"
+      sha256 "8d3ed48da0bdc34f18243f0fb4c18541b8a14f434f83fcc2728b3751f9b289e2"
 
       def install
         bin.install "diffloc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.6/diffloc_Darwin_arm64.tar.gz"
-      sha256 "4c2059afbb0d62b630af4e7103a2e18ddf85281f127706493a3eeb6399963ca6"
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Darwin_arm64.tar.gz"
+      sha256 "d7b82420112d9d2b7ebad83099d79cb3eada31a33f70a589f78a4124d4e8e6f7"
 
       def install
         bin.install "diffloc"
@@ -29,15 +29,15 @@ class Diffloc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.6/diffloc_Linux_x86_64.tar.gz"
-      sha256 "427f7ab025cc5258ade7b5994f9a2b937a5e07534f5560302aa2a034acd6a98d"
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Linux_x86_64.tar.gz"
+      sha256 "ac8c5dd79c42481d8c6de54d25a3122ef14f758158d57787e830b0f6faa94d13"
       def install
         bin.install "diffloc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.6/diffloc_Linux_arm64.tar.gz"
-      sha256 "e1f139960b430e3d111c7f796d53de3075a6362f2d243e87393aa660590dc74e"
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Linux_arm64.tar.gz"
+      sha256 "419d5c74730d65ec7899a49f98ed1d14776eaac14d64533f89612b542a5ceacf"
       def install
         bin.install "diffloc"
       end
