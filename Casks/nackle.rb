@@ -1,9 +1,9 @@
 cask "nackle" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.0.1"
-  sha256 arm:   "9935c267a0f90be25a00567d2997a122757941325405eb23d37d0cd7afb8ebdd",
-         intel: "9968929d67cec94d489a1e0f899d563776ac93028354634007e3d4464776da2e"
+  version "0.0.4"
+  sha256 arm:   "0a89a4464b2e3059559e9854199260967012c5d0c7df4b713177e9dcefe0a18f",
+         intel: "0b466bd29b20fb8ccd6f73499843959396d103751bfaa86251945eba3eb16279"
 
   url "https://github.com/nodelike/nackle/releases/download/v#{version}/Nackle-#{version}-#{arch}.dmg"
   name "Nackle"
