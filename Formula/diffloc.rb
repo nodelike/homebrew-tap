@@ -5,23 +5,23 @@
 class Diffloc < Formula
   desc "Beautiful TUI for git diff line statistics"
   homepage "https://github.com/nodelike/diffloc"
-  version "1.0.7"
+  version "1.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Darwin_x86_64.tar.gz"
-      sha256 "8d3ed48da0bdc34f18243f0fb4c18541b8a14f434f83fcc2728b3751f9b289e2"
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.8/diffloc_Darwin_x86_64.tar.gz"
+      sha256 "c1fee95b862ea8b8a99836f55fee62bb8e2823e86b788f7450b2d64b331739f3"
 
-      def install
+      define_method(:install) do
         bin.install "diffloc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Darwin_arm64.tar.gz"
-      sha256 "d7b82420112d9d2b7ebad83099d79cb3eada31a33f70a589f78a4124d4e8e6f7"
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.8/diffloc_Darwin_arm64.tar.gz"
+      sha256 "9f8d8d077ec4f451f64c551cb4172c74ba9e5b4cb6a45fcfcdd95240970ee318"
 
-      def install
+      define_method(:install) do
         bin.install "diffloc"
       end
     end
@@ -29,16 +29,16 @@ class Diffloc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Linux_x86_64.tar.gz"
-      sha256 "ac8c5dd79c42481d8c6de54d25a3122ef14f758158d57787e830b0f6faa94d13"
-      def install
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.8/diffloc_Linux_x86_64.tar.gz"
+      sha256 "808dcbfc500f636720df86675528744f461417fb64a08759b7d9518674a7eae0"
+      define_method(:install) do
         bin.install "diffloc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nodelike/diffloc/releases/download/v1.0.7/diffloc_Linux_arm64.tar.gz"
-      sha256 "419d5c74730d65ec7899a49f98ed1d14776eaac14d64533f89612b542a5ceacf"
-      def install
+      url "https://github.com/nodelike/diffloc/releases/download/v1.0.8/diffloc_Linux_arm64.tar.gz"
+      sha256 "4168503448d941ebd7e5d33e94c35ff038113c7224debf290813911fa5f434de"
+      define_method(:install) do
         bin.install "diffloc"
       end
     end
