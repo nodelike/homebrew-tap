@@ -1,6 +1,6 @@
 cask "sikemux" do
-  version "0.6.2"
-  sha256 "386651cecf82c7e052aee8b588638b919192376103bd6f9afb6871dc361e958c"
+  version "0.6.3"
+  sha256 "33d76b970c5e71868d3ba9dd3de6026ffb520cfa23c59489758fa6952cc9682a"
 
   url "https://github.com/nodelike/sikemux/releases/download/v#{version}/Sikemux_#{version}_aarch64.dmg"
   name "Sikemux"
